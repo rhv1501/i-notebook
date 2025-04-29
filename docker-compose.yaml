@@ -1,0 +1,23 @@
+services:
+  i-notebook-server:
+    build: .
+    ports:
+      - 8000:8000
+    networks:
+      - i-notebook
+    depends_on:
+      - i-notebook-db
+  i-notebook-db:
+    image: mongo:latest
+    ports:
+      - 27017:27017
+    networks:
+      - i-notebook
+    volumes:
+      - mongo-data:/data/db
+networks:
+  i-notebook:
+    driver: bridge
+volumes:
+  mongo-data:
+    driver: local
