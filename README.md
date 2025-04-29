@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-To see the deployed build switch to production, To run locally using docker or monnorepo or natively use main branch
-=======
-To see the deployed build switch to production,
-To run locally using docker or monnorepo or natively use main branch
->>>>>>> i_notebook/HEAD
 # 📝 i_Notebook
 
 A **secure and fast** notes app built using the **MERN stack**. i_Notebook lets users **create, edit, and organize** their notes efficiently, with **authentication and user-specific data storage**.
@@ -43,25 +37,30 @@ A **secure and fast** notes app built using the **MERN stack**. i_Notebook lets 
 
 i_notebook/ ├── backend/ │ ├── Dockerfile │ ├── .env │ └── ... ├── client/ │ ├── Dockerfile │ └── ... ├── docker-compose.yml └── README.md
 
+#### ⚙️ Setup
 
+1. **Clone the repository**
 
-#### ⚙️ Setup  
-
-1. **Clone the repository**  
    ```bash
    git clone https://github.com/yourusername/i_notebook.git
    cd i_notebook
 
+   ```
 
 2. **Create and update env file**
+
    ```bash
    Add JWT_SCREAT
 
+   ```
+
 3. **Run The Docker Compose File**
-   ```bash 
+   ```bash
    Run docker-compose up --d
+   ```
 
 #### Post Installation Steps
+
 - Once the app is running:
 
 - Create an account – Sign up using the frontend UI
@@ -79,6 +78,7 @@ i_notebook/ ├── backend/ │ ├── Dockerfile │ ├── .env │ �
 - Verify Database – Use MongoDB Compass/Atlas to check note storage
 
 ##### Contributing
+
 - Contributions are welcome!
 
 - Fork the repository
